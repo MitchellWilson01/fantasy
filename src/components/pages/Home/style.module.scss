@@ -1,0 +1,176 @@
+@import '../../../scss/main.scss';
+
+.outter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 25px 20px;
+}
+
+.heading {
+  font-size: 34px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  margin-top: 40px;
+  max-width: 472px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.error {
+  margin-top: 2px;
+  color: $red;
+}
+
+.input {
+  width: 100%;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 16px;
+  background-color: $bg-popup;
+  text-align: center;
+  color: white;
+
+  &:focus {
+    outline: solid $purple 2px;
+  }
+}
+
+.draft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 16px;
+  background-color: $bg-popup-alt;
+  text-align: center;
+  color: rgba($gray, 0.4);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.active {
+  padding-left: 50px;
+  background-color: $bg-popup;
+  font-weight: 600;
+  border: solid $purple 2px;
+  color: white;
+}
+
+.disabled {
+  color: $red;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  fill: white;
+  padding: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: $green-gradient-1;
+  background: linear-gradient(340deg, $green-gradient-1 1%, $green-gradient-2 66%);
+  color: $bg-main;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.draftButton {
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 35%;
+    background: $red;
+  }
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 19px;
+  width: 19px;
+  border-radius: 4px;
+  background-color: $bg-popup;
+}
+
+.checked {
+  border: solid $purple 2px;
+  background-color: $purple;
+}
+
+.checkboxLabel {
+  margin-left: 12px;
+  color: $gray;
+}
+
+.checkmark {
+  height: 15px;
+  width: 15px;
+  stroke: $bg-main;
+  stroke-width: 2px;
+  fill: $bg-main;
+}
+
+.bottom {
+  margin-top: 8px;
+}
+
+.disclaimer {
+  margin-top: 2px;
+  color: $gray;
+}
+
+.span {
+  color: $red;
+}
+
+@media only screen and (min-width: 768px) {
+  .heading {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .heading {
+    font-size: 58px;
+  }
+}

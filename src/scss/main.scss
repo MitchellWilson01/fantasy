@@ -1,0 +1,9 @@
+@import './reset.scss';
+@import './variables.scss';
+
+body {
+  font-family: 'Montserrat', 'sans-serif';
+  min-width: 365px;
+  min-height: 100vh;
+  background-color: $bg-main;
+}

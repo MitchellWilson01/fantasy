@@ -1,0 +1,35 @@
+@import '../../scss/main.scss';
+
+.outter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  background-color: $bg-popup;
+}
+
+.icon {
+  font-size: 22px;
+  color: white;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  height: 30px;
+  width: 50px;
+
+  &:hover {
+    color: $red;
+  }
+}
